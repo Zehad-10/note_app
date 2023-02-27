@@ -16,7 +16,7 @@ const submitData = async () => {
 		.from("workOut")
 		.insert([{ title: formData?.value }]);
 	if (status === 201) {
-		toast.info("Deleted successfully!", {
+		toast.success("Added successfully!", {
 			autoClose: 2000,
 		});
 		getData();
